@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post</title>
+    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js"></script>
+    <script src="config.js" type="module"></script>
+    <script src="post.js" type="module"></script> <!-- Your post.js file -->
+    <link rel="stylesheet" href="styles.css"> <!-- Your custom CSS -->
+</head>
+<body>
+    <!-- Create Post Form -->
+    <form id="form">
+        <input type="text" id="title" placeholder="Post Title" required />
+        <textarea id="description" placeholder="Post Description" required></textarea>
+        <button type="submit">Submit Post</button>
+    </form>
+
+    <!-- Container for rendering cards -->
+    <div id="card-container"></div>
+</body>
+</html>
